@@ -1,0 +1,1119 @@
+/* =================================
+   BASIC RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =================================
+   BODY
+================================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f5faf5;
+
+    color: #263b2b;
+
+    line-height: 1.6;
+
+    transition: 0.3s;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.header {
+    width: 100%;
+
+    background-color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 8%;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 24px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+
+    color: #263b2b;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #2e8b57;
+}
+
+.navbar a.active {
+    color: #2e8b57;
+
+    font-weight: bold;
+}
+
+
+/* Theme Button */
+
+.theme-button {
+    border: none;
+
+    background-color: #e8f5eb;
+
+    padding: 9px 12px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+/* =================================
+   BUTTONS
+================================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.primary-btn {
+    background-color: #2e8b57;
+
+    color: white;
+}
+
+
+.primary-btn:hover {
+    background-color: #236b43;
+}
+
+
+.secondary-btn {
+    border: 2px solid #2e8b57;
+
+    color: #2e8b57;
+}
+
+
+.secondary-btn:hover {
+    background-color: #2e8b57;
+
+    color: white;
+}
+
+
+/* =================================
+   HERO
+================================= */
+
+.hero {
+    min-height: 550px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 70px 8%;
+}
+
+
+.small-heading {
+    color: #2e8b57;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}
+
+
+.hero h1 {
+    font-size: 52px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 span {
+    color: #2e8b57;
+}
+
+
+.hero-text {
+    font-size: 18px;
+
+    max-width: 550px;
+
+    margin-bottom: 30px;
+
+    color: #5c6b60;
+}
+
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+}
+
+
+.hero-image {
+    min-height: 350px;
+
+    background-color: #dff2e3;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 150px;
+}
+
+
+/* =================================
+   FEATURES
+================================= */
+
+.features {
+    background-color: white;
+
+    padding: 70px 8%;
+}
+
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.section-heading p {
+    color: #2e8b57;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.section-heading h2 {
+    font-size: 35px;
+
+    margin-top: 5px;
+}
+
+
+.feature-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.feature-card {
+    background-color: #f5faf5;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.feature-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+.feature-card h3 {
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+
+.feature-card p {
+    color: #66736a;
+}
+
+
+/* =================================
+   ABOUT
+================================= */
+
+.about {
+    padding: 80px 8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+.about-image {
+    min-height: 320px;
+
+    background-color: #dff2e3;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 130px;
+}
+
+
+.about-content h2 {
+    font-size: 38px;
+
+    margin-bottom: 20px;
+}
+
+
+.about-content p {
+    color: #5c6b60;
+
+    margin-bottom: 15px;
+}
+
+
+.about-content .btn {
+    margin-top: 15px;
+}
+
+
+/* =================================
+   PAGE BANNER
+================================= */
+
+.page-banner {
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background-color: #dff2e3;
+}
+
+
+.page-banner h1 {
+    font-size: 45px;
+
+    margin-bottom: 10px;
+}
+
+
+.page-banner p:last-child {
+    color: #5c6b60;
+}
+
+
+/* =================================
+   PLANTS
+================================= */
+
+.plants-section {
+    padding: 70px 8%;
+}
+
+
+.plant-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.plant-card {
+    background-color: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+
+.plant-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.plant-image {
+    height: 180px;
+
+    background-color: #dff2e3;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 85px;
+}
+
+
+.plant-content {
+    padding: 25px;
+}
+
+
+.plant-content h2 {
+    margin-bottom: 10px;
+}
+
+
+.plant-content > p {
+    color: #66736a;
+
+    margin-bottom: 15px;
+}
+
+
+.plant-info {
+    margin-bottom: 20px;
+}
+
+
+.plant-info p {
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+
+.info-button {
+    background-color: #2e8b57;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+.info-button:hover {
+    background-color: #236b43;
+}
+
+
+/* =================================
+   TIPS
+================================= */
+
+.tips-section {
+    padding: 70px 8%;
+}
+
+
+.tips-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.tip-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    position: relative;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+.tip-number {
+    color: #2e8b57;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+
+.tip-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+.tip-card h2 {
+    margin-bottom: 10px;
+
+    font-size: 22px;
+}
+
+
+.tip-card p {
+    color: #66736a;
+}
+
+
+.tip-of-day {
+    text-align: center;
+
+    margin: 0 8% 70px;
+
+    padding: 40px;
+
+    background-color: #dff2e3;
+
+    border-radius: 15px;
+}
+
+
+.tip-of-day h2 {
+    margin-bottom: 10px;
+}
+
+
+.tip-of-day p {
+    margin-bottom: 20px;
+}
+
+
+/* =================================
+   SCHEDULE
+================================= */
+
+.schedule-section {
+    padding: 70px 8%;
+}
+
+
+.schedule-container {
+    max-width: 900px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.schedule-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+.schedule-icon {
+    width: 60px;
+
+    height: 60px;
+
+    background-color: #dff2e3;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 30px;
+
+    flex-shrink: 0;
+}
+
+
+.schedule-content {
+    flex: 1;
+}
+
+
+.schedule-content h2 {
+    margin-bottom: 5px;
+}
+
+
+.schedule-content p {
+    color: #66736a;
+
+    margin-bottom: 5px;
+}
+
+
+.schedule-content span {
+    color: #2e8b57;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.done-button {
+    background-color: #2e8b57;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+.done-button:hover {
+    background-color: #236b43;
+}
+
+
+.done {
+    background-color: #dff2e3;
+
+    text-decoration: line-through;
+
+    opacity: 0.7;
+}
+
+
+/* =================================
+   CONTACT
+================================= */
+
+.contact-section {
+    padding: 70px 8%;
+}
+
+
+.contact-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+.contact-info h2 {
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+
+.contact-info > p {
+    color: #66736a;
+
+    margin-bottom: 30px;
+}
+
+
+.contact-item {
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.contact-item > span {
+    font-size: 30px;
+}
+
+
+.contact-item h3 {
+    margin-bottom: 3px;
+}
+
+
+.contact-item p {
+    color: #66736a;
+}
+
+
+.contact-form-container {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccd5ce;
+
+    border-radius: 6px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2e8b57;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+.form-button {
+    width: 100%;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+.footer {
+    background-color: #263b2b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 30px;
+}
+
+
+/* =================================
+   DARK MODE
+================================= */
+
+body.dark-mode {
+    background-color: #17221a;
+
+    color: #f1f5f2;
+}
+
+
+body.dark-mode .header,
+body.dark-mode .feature-card,
+body.dark-mode .plant-card,
+body.dark-mode .tip-card,
+body.dark-mode .schedule-card,
+body.dark-mode .contact-form-container {
+    background-color: #223127;
+}
+
+
+body.dark-mode .navbar a {
+    color: #f1f5f2;
+}
+
+
+body.dark-mode .hero-text,
+body.dark-mode .about-content p,
+body.dark-mode .plant-content > p,
+body.dark-mode .tip-card p,
+body.dark-mode .schedule-content p,
+body.dark-mode .contact-info > p,
+body.dark-mode .contact-item p {
+    color: #c7d0ca;
+}
+
+
+body.dark-mode .features {
+    background-color: #1b281f;
+}
+
+
+body.dark-mode .feature-card {
+    background-color: #223127;
+}
+
+
+body.dark-mode .hero-image,
+body.dark-mode .about-image,
+body.dark-mode .plant-image,
+body.dark-mode .schedule-icon,
+body.dark-mode .tip-of-day,
+body.dark-mode .page-banner {
+    background-color: #2b4935;
+}
+
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background-color: #17221a;
+
+    color: white;
+
+    border-color: #526257;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 1024px) {
+
+    .header {
+        padding: 20px 5%;
+    }
+
+
+    .hero,
+    .about {
+        padding-left: 5%;
+
+        padding-right: 5%;
+    }
+
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+
+    .plant-container,
+    .tips-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    .header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+
+    .navbar {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding: 50px 20px;
+    }
+
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+
+    .hero-text {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .hero-buttons {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    .hero-image {
+        min-height: 250px;
+
+        font-size: 100px;
+    }
+
+
+    /* Features */
+
+    .features {
+        padding: 50px 20px;
+    }
+
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* About */
+
+    .about {
+        grid-template-columns: 1fr;
+
+        padding: 50px 20px;
+
+        text-align: center;
+    }
+
+
+    .about-image {
+        min-height: 250px;
+
+        font-size: 100px;
+    }
+
+
+    .about-content h2 {
+        font-size: 32px;
+    }
+
+
+    /* Page Banner */
+
+    .page-banner {
+        padding: 50px 20px;
+    }
+
+
+    .page-banner h1 {
+        font-size: 36px;
+    }
+
+
+    /* Plants */
+
+    .plants-section {
+        padding: 50px 20px;
+    }
+
+
+    .plant-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Tips */
+
+    .tips-section {
+        padding: 50px 20px;
+    }
+
+
+    .tips-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .tip-of-day {
+        margin: 0 20px 50px;
+
+        padding: 30px 20px;
+    }
+
+
+    /* Schedule */
+
+    .schedule-section {
+        padding: 50px 20px;
+    }
+
+
+    .schedule-card {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .schedule-content {
+        width: 100%;
+    }
+
+
+    /* Contact */
+
+    .contact-section {
+        padding: 50px 20px;
+    }
+
+
+    .contact-container {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .contact-info h2 {
+        font-size: 30px;
+    }
+
+}
