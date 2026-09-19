@@ -25,7 +25,7 @@ A responsive and user-friendly plant care website designed to help users explore
 
 ### Clone the repository
 
-git clone https://github.com/YOUR-USERNAME/plant-care-website.git
+git clone https://github.com/222iqrashaukat-commits/project1.git
 
 ### Run the project
 
